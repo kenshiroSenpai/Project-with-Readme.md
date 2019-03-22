@@ -237,9 +237,11 @@ this app is simple:
 
 * Check XML Surveys and Lists.
 ![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README1.PNG)
+
 ![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README2.PNG)
 * And now, validate XML Survey and Lists
 ![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README3.PNG)
+
 ![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README4.PNG)
 ### Acknowledgments
 * https://github.com/tcrurav/XmlRESTfulNodeJSfromJS This github is very good, you always find the solution to your problems. In this case, I use this project like a model.
@@ -251,3 +253,4 @@ https://netbeans.org/ It's a good framework to do XML and XSD.
 ### Is the markup language a markup language?
 Markdown is a lightweight markup language.
 ### Does it comply with the basic syntax of markup languages?
+Does not comply with the common syntax (<!--<tag id=""></tag>-->).
