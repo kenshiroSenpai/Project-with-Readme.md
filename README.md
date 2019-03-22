@@ -236,13 +236,14 @@ this app is simple:
 ### Screenshots
 
 * Check XML Surveys and Lists.
-![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README1.PNG)
 
-![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README2.PNG)
+![validationtest](https://github.com/kenshiroSenpai/Project-with-Readme.md/blob/master/img/README1.PNG)
+
+![validationtest](https://github.com/kenshiroSenpai/Project-with-Readme.md/blob/master/img/README2.PNG)
 * And now, validate XML Survey and Lists
-![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README3.PNG)
+![validationtest](https://github.com/kenshiroSenpai/Project-with-Readme.md/blob/master/img/README3.PNG)
 
-![validation test](https://github.com/kenshiroSenpai/Project-with-Readme.md/tree/master/img/README4.PNG)
+![validationtest](https://github.com/kenshiroSenpai/Project-with-Readme.md/blob/master/img/README4.PNG)
 ### Acknowledgments
 * https://github.com/tcrurav/XmlRESTfulNodeJSfromJS This github is very good, you always find the solution to your problems. In this case, I use this project like a model.
 https://gist.github.com/PurpleBooth/109311bb0361f32d87a2#file-readme-template-md It's a good README.md template.
