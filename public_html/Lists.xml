@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<lists xmlns="https://www.APP_Suresh.com/APP"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://www.APP_Suresh.com/APP validator.xsd">
+    <user id="1">
+        <list>
+            <title>Papaya</title>
+            <number>4</number>
+            <done>True</done>
+        </list>
+        <list>
+            <title>Melón</title>
+            <number>1</number>
+            <done>False</done>
+        </list>
+    </user>
+    <user id="2">
+        <list>
+            <title>Bananas</title>
+            <number>9</number>
+            <done>True</done>
+        </list>
+        <list>
+            <title>Naranjas</title>
+            <number>4</number>
+            <done>False</done>
+        </list>
+    </user>
+</lists>

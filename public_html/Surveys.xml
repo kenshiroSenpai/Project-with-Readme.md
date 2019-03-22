@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<surveys xmlns="https://www.APP_Suresh.com/APP"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://www.APP_Suresh.com/APP validator.xsd">
+    <survey>
+        <age>18</age>
+        <country>Germany</country>
+        <email>banana@gmail.com</email>
+        <name>Banana</name>
+        <lastName>Man</lastName>
+        <points>9</points>
+        <user_survey>BananaMan96</user_survey>
+    </survey>
+    <survey>
+        <age>21</age>
+        <country>Italy</country>
+        <email>pepedestroyer@gmail.com</email>
+        <name>Pepe</name>
+        <lastName>Juan</lastName>
+        <note>esto es una nota</note>
+        <points>6</points>
+        <user_survey>xXPepeXx</user_survey>
+    </survey>
+</surveys>

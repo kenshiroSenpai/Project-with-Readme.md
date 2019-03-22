@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.APP_Suresh.com/APP"
+           xmlns="https://www.APP_Suresh.com/APP"
+           elementFormDefault="qualified">
+    
+    <!--Elements-->
+    
+    <!--Surveys-->
+    <xs:element name="surveys" type="surveys"/>
+    <xs:element name="survey" type="survey"/>
+    <xs:element name="age" type="ageValidator"/>
+    <xs:element name="country" type="countryValidator"/>
+    <xs:element name="email" type="emailValidator"/>
+    <xs:element name="name" type="nameValidator"/>
+    <xs:element name="lastName" type="nameValidator"/>
+    <xs:element name="note" type="xs:string"/>
+    <xs:element name="points" type="pointsValidator"/>
+    <xs:element name="user_survey" type="xs:string"/>
+    <!--Surveys-->
+    
+    <!--Lists-->
+    <xs:element name="lists" type="lists"/>
+    <xs:element name="user" type="user"/>
+    <xs:element name="list" type="list"/>
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="number" type="xs:int"/>
+    <xs:element name="done" type="doneValidator"/>
+    <!--Lists-->
+    
+    <!--Complex-->
+    
+    <!--Surveys-->
+    <xs:complexType name="surveys">
+        <xs:sequence>
+            <xs:element ref = "survey" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="survey">
+        <xs:sequence>
+            <xs:element ref="age"/>
+            <xs:element ref="country"/>
+            <xs:element ref="email"/>
+            <xs:element ref="name"/>
+            <xs:element ref="lastName"/>
+            <xs:element ref="note" minOccurs="0"/>
+            <xs:element ref="points"/>
+            <xs:element ref="user_survey"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!--Surveys-->
+    
+    <!--Lists-->
+    <xs:complexType name="lists">
+        <xs:sequence>
+            <xs:element ref="user" maxOccurs="unbounded"/>
+        </xs:sequence> 
+    </xs:complexType>
+    
+    <xs:complexType name="user">
+        <xs:sequence>
+            <xs:element ref="list" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id">
+            <xs:simpleType>
+                <xs:restriction base="xs:int">
+                    <xs:minInclusive value="1"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    
+    <xs:complexType name="list">
+        <xs:sequence>
+            <xs:element ref="title"/>
+            <xs:element ref="number"/>
+            <xs:element ref="done"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!--Lists-->
+    
+    <!--Restriction-->
+    
+    <!--Surveys-->
+    <xs:simpleType name="ageValidator">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="18"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="countryValidator">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Spain"/>
+            <xs:enumeration value="Germany"/>
+            <xs:enumeration value="France"/>
+            <xs:enumeration value="Italy"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="emailValidator">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="nameValidator">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1}[a-z]*"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="pointsValidator">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!--Surveys-->
+    
+    <!--Lists-->
+    <xs:simpleType name="doneValidator">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="True"/>
+            <xs:enumeration value="False"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!--Lists-->
+</xs:schema>
